@@ -1,0 +1,42 @@
+.content__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.content__wrap p {
+    padding: 50px;
+    position: relative;
+    z-index: 20;
+}
+.content-wrap--bg p {
+    color: #fff;
+}
+.content-wrap--bg::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    z-index: 0;
+}
+.content-wrap--bg.show::before {
+    opacity: 1;
+}
+.content-wrap--bg001::before {
+    background: #7b0000;
+}
+
+.content-wrap--bg002::before {
+    background: #00147b;
+}
+.content-wrap--bg003::before {
+    background: #957e00;
+}
