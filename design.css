@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+
 .content__wrap {
     display: flex;
     justify-content: center;
@@ -5,13 +10,13 @@
     width: 100%;
     height: 100vh;
 }
+
 .content__wrap p {
-    padding: 50px;
-    position: relative;
+
     z-index: 20;
 }
 .content-wrap--bg p {
-    color: #fff;
+    color: #020202;
 }
 .content-wrap--bg::before {
     content: "";
@@ -31,12 +36,93 @@
     opacity: 1;
 }
 .content-wrap--bg001::before {
-    background: #7b0000;
+    background-image: url(./material/bg/bg1.jpg);
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
+
 }
 
 .content-wrap--bg002::before {
-    background: #00147b;
+    background-image: url(./material/bg/bg2.jpg);
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
 }
 .content-wrap--bg003::before {
-    background: #957e00;
+    background-image: url(./material/bg/bg3.jpg);
+    background-color:rgba(255,255,255,0.5);
+    background-blend-mode:lighten;
 }
+
+body{
+    /* background-image: url(./material/bg/bg5.jpg); */
+    background-color:rgb(255, 255, 255);
+    background-blend-mode:lighten;
+    background-attachment: fixed;
+}
+
+.content-box{
+    max-width: 960px;
+    max-height:100%;
+    z-index: 20;
+}
+
+.content-test-a{
+    width: 50%;
+    float: left;
+}
+.content-test-b{
+    width: 50%;
+    float: left;
+}
+
+.noto-serif-jp-regular {
+    font-family: "Noto Serif JP", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(12px, 1.8vw, 24px);
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: #fff;
+    text-align: center;
+  }
+  #loading_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #loading .kvArea {
+    width: 100%;
+  }
+  #loading .kvArea .img_box {
+    text-align: center;
+  }
+  #loading .kvArea .img_box img {
+    max-width: 100%;
+    height: auto;
+  }
+  .fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    opacity: 1;
+  }
+  @keyframes fadeUpAnime {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(0);
+    }
+  }
