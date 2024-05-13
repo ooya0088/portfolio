@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-size:50px;
+    font-style: normal;
+    color:#000;
+  }
+h1{
+    background: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0));
+    max-width: 960px;
+    min-height: 160px;
+    padding:10px;
+}
+  header{
+    border: solid #000;
+    border-width:2px 2px 2px 2px;
+    max-width: 960px;
+    min-height: 160px;
+    background-size: cover;
+    background-image: url(./material/bg/bg3.jpg);
+    background-color:rgba(255,255,255,0);
+    background-blend-mode:lighten;
+    background-position: center center;
+  }
+
+  header menu{
+    background-color: #000;
+  }

@@ -2,6 +2,8 @@
     margin: 0px;
     padding: 0px;
   }
+  
+
 
 .content__wrap {
     display: flex;
@@ -54,10 +56,12 @@
 }
 
 body{
-    /* background-image: url(./material/bg/bg5.jpg); */
-    background-color:rgb(255, 255, 255);
+    background-image: url(./material/bg/bg4.jpg);
+    background-color:rgb(255, 255, 255,0.5);
     background-blend-mode:lighten;
     background-attachment: fixed;
+
+
 }
 
 .content-box{
@@ -79,7 +83,7 @@ body{
     font-family: "Noto Serif JP", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: clamp(12px, 1.8vw, 24px);
+    font-size: clamp(12px, 1.8vw, 20px);
 }
 
 #loading {
