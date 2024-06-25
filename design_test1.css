@@ -7,6 +7,7 @@
     line-height: clamp(24px, 4vw, 120px);
     color :#fff;
 	display: inline-block;
+	background-color: black;
 	background-image: linear-gradient(to top, #F44336 50%, rgba(0,0,0,0) 50% );
 	background-position: 0 0;
 	background-size: auto 200%;
