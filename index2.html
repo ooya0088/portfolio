@@ -10,18 +10,24 @@
  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
  <script src="jquery.js"></script>
+ <script src="design.js"></script>
  <script src="design2.js"></script>
- 
  </head>
  <body>
+    <div id="loading">
+        <div class="kvArea" id="loading_box">
+          <div class="img_box">Now Loading...</div>
+        </div>
+      </div>
+
     <div id="menu">
     <menu id="global_nav">
-        <li><a href="#1" class="menu_slide">index</a></li>
-        <li><a href="#1" class="menu_slide">profile</a></li>
-        <li><a href="#1" class="menu_slide">works</a></li>
-        <li><a href="#1" class="menu_slide">contact</a></li>
+        <li><a href="#menu" class="menu_slide">index</a></li>
+        <li><a href="#profile" class="menu_slide">profile</a></li>
+        <li><a href="#gallery" class="menu_slide">gallery</a></li>
+        <li><a href="#illust" class="menu_slide">illust</a></li>
     </menu>
     </div>
 <header>
@@ -31,9 +37,9 @@
     <p>One cannot think well, love well, sleep well, if one has not dined well.</p>
 </header>
 
-<div class="content">
+<div class="content " id="profile">
     
-    <div class="profile">
+    <div class="profile fadeUpTrigger">
         <div class="profile_left">
             <p class="profile_icon">
             <img src="./image/profile.png">
@@ -43,31 +49,46 @@
         <div class="profile_right">
             <h2>Ryosuke.Oya</h2>
             <p class="profile_text">
-                Web見習い。Illustratorを中心に勉強中。<br>CLIP STUDIO PAINTを用いたイラストも描いています。
+                Web見習い。CSS3やIllustratorなどを中心に勉強中。<br>CLIP STUDIO PAINTを用いたイラストも描いています。
             </p>
         </div>
     </div>
 </div>
-<div class="content">
-    <p>
-【ベルリン時事】スロバキアのフィツォ首相が１５日午後、中部ハンドロバで銃撃され、搬送先の病院で集中治療を受けた。一時危篤状態が伝えられたものの、政府高官は同日、英ＢＢＣ放送で「現時点では命の危機はない」と述べ、回復の兆候があると説明した。一方、政府は犯行について、「政治的な動機に基づいて暗殺が試みられた」と指摘した。
-撃った男はその場で拘束。男はスロバキア西部に住むアマチュア詩人（７１）で、一部メディアによると、銃撃後にフィツォ政権への反対を訴えた。      
-現地報道などによると、フィツォ氏は、公共施設で閣議が開かれた後、外に集まった支持者らと交流中に銃撃された。男は市民に紛れ、拳銃で５発を発砲。フィツォ氏は腹部を撃たれて倒れた。頭部を負傷したとの情報もある。
-フィツォ氏は左派「スメル（道標）」を率いて昨年９月の総選挙を制し、３度目となる首相に就任。ロシアの侵攻を受けるウクライナへの軍事支援を止めたほか、最近はメディアや司法の改革を推し進めていた。野党や欧州連合（ＥＵ）は、報道の自由や法の支配が損なわれると懸念を示し、国内では抗議活動が活発化していた。
-    </p>
+<div class="content" id="gallery">
+    <h2>Gallery</h2>
+        <ul class="gallery">
+            <li><a href="./image/gallery/camp.png" data-lightbox="gallery1" data-title="待ち受け画像(Illustrator)"><img src="./image/gallery/camp.png" alt=""></a></li>
+            <li><a href="./image/gallery/wallpaper1.png" data-lightbox="gallery1" data-title="壁紙(Illustrator)"><img src="./image/gallery/wallpaper1.png" alt=""></a></li> 
+            <li><a href="./image/gallery/webwriting1.png" data-lightbox="gallery1" data-title="講義用画像(Illustrator) 引用『解くだけで一生使える知識が学べる！クイズdeデザイン- SBクリエイティブ株式会社』"><img src="./image/gallery/webwriting1.png" alt=""></a></li> 
+            <li><a href="./image/gallery/webwriting2.png" data-lightbox="gallery1" data-title="講義用画像(Illustrator) 引用『解くだけで一生使える知識が学べる！クイズdeデザイン- SBクリエイティブ株式会社』"><img src="./image/gallery/webwriting2.png" alt=""></a></li>
+            <li><a href="./image/gallery/webwriting3.png" data-lightbox="gallery1" data-title="講義用画像(Illustrator) 引用『解くだけで一生使える知識が学べる！クイズdeデザイン- SBクリエイティブ株式会社』"><img src="./image/gallery/webwriting3.png" alt=""></a></li>      
+            <li><a href="./image/gallery/webwriting4.png" data-lightbox="gallery1" data-title="講義用画像(Illustrator) 引用『解くだけで一生使える知識が学べる！クイズdeデザイン- SBクリエイティブ株式会社』"><img src="./image/gallery/webwriting4.png" alt=""></a></li>      
+            <li><a href="./image/gallery/webwriting5.png" data-lightbox="gallery1" data-title="講義用画像(Illustrator) 引用『解くだけで一生使える知識が学べる！クイズdeデザイン- SBクリエイティブ株式会社』"><img src="./image/gallery/webwriting5.png" alt=""></a></li>            
+        </ul>
 
 </div>
-<div class="content">
-    <p>
-【ベルリン時事】スロバキアのフィツォ首相が１５日午後、中部ハンドロバで銃撃され、搬送先の病院で集中治療を受けた。一時危篤状態が伝えられたものの、政府高官は同日、英ＢＢＣ放送で「現時点では命の危機はない」と述べ、回復の兆候があると説明した。一方、政府は犯行について、「政治的な動機に基づいて暗殺が試みられた」と指摘した。
-撃った男はその場で拘束。男はスロバキア西部に住むアマチュア詩人（７１）で、一部メディアによると、銃撃後にフィツォ政権への反対を訴えた。      
-現地報道などによると、フィツォ氏は、公共施設で閣議が開かれた後、外に集まった支持者らと交流中に銃撃された。男は市民に紛れ、拳銃で５発を発砲。フィツォ氏は腹部を撃たれて倒れた。頭部を負傷したとの情報もある。
-フィツォ氏は左派「スメル（道標）」を率いて昨年９月の総選挙を制し、３度目となる首相に就任。ロシアの侵攻を受けるウクライナへの軍事支援を止めたほか、最近はメディアや司法の改革を推し進めていた。野党や欧州連合（ＥＵ）は、報道の自由や法の支配が損なわれると懸念を示し、国内では抗議活動が活発化していた。
-    </p>
-
+<div class="content" id="illust">
+    <h2>Illust</h2>
+        <ul class="gallery">
+            <li><a href="./image/illust/01.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/01.png" alt=""></a></li>
+            <li><a href="./image/illust/02.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/02.png" alt=""></a></li>
+            <li><a href="./image/illust/03.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/03.png" alt=""></a></li>
+            <li><a href="./image/illust/04.png" data-lightbox="gallery2" data-title="二次創作イラスト"><img src="./image/illust/04.png" alt=""></a></li>
+            <li><a href="./image/illust/05.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/05.png" alt=""></a></li>
+            <li><a href="./image/illust/06.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/06.png" alt=""></a></li>
+            <li><a href="./image/illust/07.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/07.png" alt=""></a></li>
+            <li><a href="./image/illust/08.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/08.png" alt=""></a></li>
+            <li><a href="./image/illust/09.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/09.png" alt=""></a></li>
+            <li><a href="./image/illust/10.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/10.png" alt=""></a></li>
+            <li><a href="./image/illust/11.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/11.png" alt=""></a></li>
+            <li><a href="./image/illust/12.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/12.png" alt=""></a></li>
 </div>
 
-
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<!--自作のJS-->
+<script src="js/6-2-1.js"></script>
+</body>
 
 
  </body>
