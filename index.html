@@ -1,44 +1,99 @@
+
 <!DOCTYPE html>
 <html lang="ja">
  <head>
  <meta charset="utf-8">
- <title>サイトタイトル</title>
- <link rel="stylesheet" href="design.css">
+ <title>StraightDesign</title>
+ <link rel="stylesheet" href="design2.css">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
  <script src="jquery.js"></script>
- <script src="scroll.js"></script>
- 
+ <script src="design.js"></script>
+ <script src="design2.js"></script>
  </head>
  <body>
     <div id="loading">
         <div class="kvArea" id="loading_box">
-          <div class="img_box">よみこみちゅう</div>
+          <div class="img_box">Now Loading...</div>
         </div>
       </div>
-    <div class="content__wrap content-wrap--bg">
-        <div class="content-box">
-        <p class="noto-serif-jp-regular content-test-a">
-東武鉄道は2024年4月30日、グループ中期経営計画2024～2027を策定。その中に「QR乗車券の導入による磁気乗車券の全廃」を推進する方針を盛り込みました。
-「磁気乗車券」とは、磁気を使って有効区間や有効日などの情報を書き込めるよう、裏面に「磁性体」が塗られたきっぷのことです。自動改札機に通して使うことでお馴染みのきっぷです。     
-東武鉄道は2023年10～12月に、QRコードを利用したデジタル乗車サービスの実証実験を行っています。この実験では、スマートフォン上に表示された日光エリアのフリーパスのQRコードを、自動改札機や係員窓口のタブレット端末にかざすことで、ICカードと同等の入出場が可能になるというものでした。
-今後、QR乗車券が本格的に導入されるとみられ、東武線で自動改札機に通す紙のきっぷ（磁気乗車券）は見納めになるかもしれません。東武鉄道によると、「現時点で紙のきっぷを全廃する予定はありません」（広報部）とのこと。QR乗車券にも紙のタイプがあり、紙のきっぷ自体はそうした形で残っていくとみられます。
-        </p>
-        <p class="noto-serif-jp-regular content-test-a">https://www.asobou.co.jp/blog/web/scroll-bg</p>
+
+    <div id="menu">
+    <menu id="global_nav">
+        <li><a href="#menu" class="menu_slide">index</a></li>
+        <li><a href="#profile" class="menu_slide">profile</a></li>
+        <li><a href="#gallery" class="menu_slide">gallery</a></li>
+        <li><a href="#illust" class="menu_slide">illust</a></li>
+    </menu>
     </div>
+<header>
+
+
+    <h1 class="archivo-black-regular">StraightDesign</h1>
+    <p>One cannot think well, love well, sleep well, if one has not dined well.</p>
+</header>
+
+<div class="content " id="profile">
+    
+    <div class="profile fadeUpTrigger">
+        <div class="profile_left">
+            <p class="profile_icon">
+            <img src="./image/profile.png">
+            </p>
+        </div>
+
+        <div class="profile_right">
+            <h2>Ryosuke.Oya</h2>
+            <p class="profile_text">
+                Web見習い。CSS3やAdobe Illustratorなどを中心に勉強中です。<br>CLIP STUDIO PAINTを用いたイラストも描いています。
+            </p>
+        </div>
     </div>
-    <div class="content__wrap content-wrap--bg content-wrap--bg001">
-        <p>青色背景青色背景青色背景青色背景青色背景青色背景</p>
-    </div>
-    <div class="content__wrap content-wrap--bg content-wrap--bg002">
-        <p>青色背景青色背景青色背景青色背景青色背景青色背景</p>
-    </div>
-    <div class="content__wrap content-wrap--bg content-wrap--bg003">
-        <p>黄色背景黄色背景黄色背景黄色背景黄色背景黄色背景</p>
-    </div>
-    <div class="content__wrap content-wrap--bg">
-        <p>https://www.asobou.co.jp/blog/web/scroll-bg</p>
-    </div>
+</div>
+<div class="content" id="gallery">
+    <h2>Gallery</h2>
+    <p class ="text">主にAdobe Illustratorで作成した画像を載せています。</p>
+        <ul class="gallery">
+            <li><a href="./image/gallery/camp.png" data-lightbox="gallery1" data-title="待ち受け画像(Illustrator)"><img src="./image/gallery/camp.png" alt=""></a></li>
+            <li><a href="./image/gallery/wallpaper1.png" data-lightbox="gallery1" data-title="壁紙(Illustrator)"><img src="./image/gallery/wallpaper1.png" alt=""></a></li> 
+            <li><a href="./image/gallery/webwriting1.png" data-lightbox="gallery1" data-title="講座用画像(Illustrator) 引用『解くだけで一生使える知識が学べる！クイズdeデザイン- SBクリエイティブ株式会社』"><img src="./image/gallery/webwriting1.png" alt=""></a></li> 
+            <li><a href="./image/gallery/webwriting2.png" data-lightbox="gallery1" data-title="講座用画像(Illustrator) 引用『解くだけで一生使える知識が学べる！クイズdeデザイン- SBクリエイティブ株式会社』"><img src="./image/gallery/webwriting2.png" alt=""></a></li>
+            <li><a href="./image/gallery/webwriting3.png" data-lightbox="gallery1" data-title="講座用画像(Illustrator) 引用『解くだけで一生使える知識が学べる！クイズdeデザイン- SBクリエイティブ株式会社』"><img src="./image/gallery/webwriting3.png" alt=""></a></li>      
+            <li><a href="./image/gallery/webwriting4.png" data-lightbox="gallery1" data-title="講座用画像(Illustrator) 引用『解くだけで一生使える知識が学べる！クイズdeデザイン- SBクリエイティブ株式会社』"><img src="./image/gallery/webwriting4.png" alt=""></a></li>      
+            <li><a href="./image/gallery/webwriting5.png" data-lightbox="gallery1" data-title="講座用画像(Illustrator) 引用『解くだけで一生使える知識が学べる！クイズdeデザイン- SBクリエイティブ株式会社』"><img src="./image/gallery/webwriting5.png" alt=""></a></li>      
+            <li><a href="./image/gallery/xmlpro.png" data-lightbox="gallery1" data-title="プログラミングサークル勧誘用チラシデザイン"><img src="./image/gallery/xmlpro.png" alt=""></a></li>
+            <li><a href="./image/gallery/xmlpro2.png" data-lightbox="gallery1" data-title="プログラミングサークル出店用看板デザイン"><img src="./image/gallery/xmlpro2.png" alt=""></a></li>        
+        </ul>
+
+</div>
+<div class="content" id="illust">
+    <h2>Illust</h2>
+    <p class ="text">主にCLIP STUDIO PAINTで作成した二次創作イラストを載せています。</p>
+        <ul class="gallery">
+            <li><a href="./image/illust/01.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/01.png" alt=""></a></li>
+            <li><a href="./image/illust/02.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/02.png" alt=""></a></li>
+            <li><a href="./image/illust/03.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/03.png" alt=""></a></li>
+            <li><a href="./image/illust/04.png" data-lightbox="gallery2" data-title="二次創作イラスト"><img src="./image/illust/04.png" alt=""></a></li>
+            <li><a href="./image/illust/05.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/05.png" alt=""></a></li>
+            <li><a href="./image/illust/06.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/06.png" alt=""></a></li>
+            <li><a href="./image/illust/07.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/07.png" alt=""></a></li>
+            <li><a href="./image/illust/08.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/08.png" alt=""></a></li>
+            <li><a href="./image/illust/09.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/09.png" alt=""></a></li>
+            <li><a href="./image/illust/10.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/10.png" alt=""></a></li>
+            <li><a href="./image/illust/11.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/11.png" alt=""></a></li>
+            <li><a href="./image/illust/13.png" data-lightbox="gallery2" data-title="二次創作イラスト(CLIP STUDIO PAINT)"><img src="./image/illust/13.png" alt=""></a></li>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<!--自作のJS-->
+<script src="js/6-2-1.js"></script>
+</body>
+
+
  </body>
 </html>
