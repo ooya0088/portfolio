@@ -1,14 +1,14 @@
 var isLoad = false;
 
 $(window).on('load',function(){
-  $("#loading").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-  $("#loading_box").delay(1200).fadeOut('slow');//ローディング画像を1.2秒（1200ms）待機してからフェードアウト
+  $("#loading").delay(500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+  $("#loading_box").delay(1150).fadeOut('slow');//ローディング画像を1.2秒（1200ms）待機してからフェードアウト
   fadeAnime();
 });
 
 function fadeAnime(){
   // flipLeft
-  $('.gallery li').each(function(){ 
+  $('.image_box').each(function(){ 
       var elemPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
@@ -18,6 +18,18 @@ function fadeAnime(){
           $(this).removeClass('flipLeft');
       }
   });
+
+  $('.gallery li').each(function(){ 
+    var elemPos = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight){
+        $(this).addClass('flipLeft');
+    }else{
+        $(this).removeClass('flipLeft');
+    }
+});
+
 
   // ふわっ
   $('.fadeUpTrigger').each(function(){ //fadeUpTriggerというクラス名が
