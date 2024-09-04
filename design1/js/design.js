@@ -6,6 +6,9 @@ $(window).on('load',function(){
   fadeAnime();
 });
 
+
+
+
 function fadeAnime(){
   // flipLeft
   $('.image_box').each(function(){ 
@@ -77,7 +80,14 @@ $(function(){
     var position = target.offset().top + adjust;
     // スムーススクロール linear（等速） or swing（変速）
     $('body,html').animate({scrollTop:position}, speed, 'swing');
+    $(".openbtn1").removeClass('active');
+    $("nav").removeClass('open');
     return false;
+  });
+
+  $(".openbtn1").click(function () {
+    $(this).toggleClass('active');
+    $("nav").toggleClass('open');
   });
 
 });
